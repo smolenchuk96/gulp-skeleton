@@ -1,0 +1,62 @@
+{
+  "_from": "bemto.pug",
+  "_id": "bemto.pug@2.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-Hbsi9YgIW3GGEljMTNaWxLVrU/M=",
+  "_location": "/bemto.pug",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "bemto.pug",
+    "name": "bemto.pug",
+    "escapedName": "bemto.pug",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/bemto.pug/-/bemto.pug-2.1.0.tgz",
+  "_shasum": "1dbb22f588085b71861258cc4cd696c4b56b53f3",
+  "_spec": "bemto.pug",
+  "_where": "C:\\Users\\User\\PhpstormProjects\\new-shop",
+  "author": {
+    "name": "Roman Komarov",
+    "email": "kizu@kizu.ru"
+  },
+  "bugs": {
+    "url": "https://github.com/kizu/bemto/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Smart mixins for writing BEM in Pug",
+  "devDependencies": {
+    "mocha": "*",
+    "pug": "2.0.0-beta6",
+    "should": "2.0.x"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "homepage": "https://github.com/kizu/bemto#readme",
+  "keywords": [
+    "jade",
+    "pug",
+    "bem"
+  ],
+  "licence": "MIT",
+  "license": "MIT",
+  "main": "./lib/index.pug",
+  "name": "bemto.pug",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kizu/bemto.git"
+  },
+  "scripts": {
+    "test": "mocha --require should --reporter list"
+  },
+  "version": "2.1.0"
+}

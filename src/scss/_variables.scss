@@ -1,0 +1,40 @@
+// Colors
+$white: white;
+$black: black;
+$accent-color: #8dc63f;
+//
+$success-color: #8dc63f;
+$warning-color: #b8b900;
+$error-color: #ff3743;
+// Backgrounds colors
+$bg-main-color: $white;
+$bg-default-color: #e5e5e5;
+$bg-accent-color: $accent-color;
+$bg-light-color: #f5f5f3;
+// Borders colors
+$border-main-color: #e5e5e5;
+$border-accent-color: $accent-color;
+$border-light-color: $white;
+// Texts colors
+$text-main-color: #121212;
+$text-accent-color: $accent-color;
+$text-default-color: #333;
+$text-light-color: $white;
+$text-link-color: $accent-color;
+$text-placeholder-color: #c5c5c5;
+
+// Fonts
+$font-icons-regular: 'FontAwesome Regular';
+$font-icons-solid: 'FontAwesome Solid';
+$font-icons-brands: 'FontAwesome Brands';
+$font-main: 'Roboto', Arial, sans-serif;
+@import 'fonts';
+
+// box-shadow
+$box-shadow-default: 0 0 .25rem 0 rgba($black,.12);
+
+// border-radius
+$border-radius-default: .188rem;
+
+// Animations by CSS 3
+$transition-default: all .33s;

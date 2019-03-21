@@ -1,0 +1,9 @@
+mixin radioMain(name, value, text, disabled)
+    if !disabled
+        +b('label').radio-main
+            +e('input').input(type='radio', name=name, value=value)
+            +e('span').display= text
+    else
+        +b('label').radio-main
+            +e('input').input(type='radio', name=name, value=value, disabled='disabled')
+            +e('span').display= text

@@ -1,0 +1,97 @@
+.popup {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 2.5rem 2.5rem;
+  background: $white;
+  border-radius: $border-radius-default;
+
+  &__title {
+    padding-right: 2rem;
+    margin: 0 0 1rem;
+    font: 500 1.5rem/1.875rem $font-main;
+    color: $text-default-color;
+
+    &_center {
+      padding-left: 2rem;
+      text-align: center;
+    }
+  }
+  &__desc {
+    margin: 0 0 2.25rem;
+    font: 400 .875rem/1rem $font-main;
+    color: $text-default-color;
+
+    &_center {
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
+  &__input-container {
+    position: relative;
+    margin-top: 1.25rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .mfp-close {
+    top: 2.5rem;
+    right: 2.5rem;
+    display: block;
+    padding: 0;
+    width: 1.875rem;
+    height: 1.875rem;
+    background: url(../img/theme/icons/close_dark.svg) no-repeat center;
+    background-size: 14px;
+    border: 2px solid $border-main-color;
+    border-radius: 50%;
+    font-size: 0;
+    opacity: 1;
+    transition: $transition-default;
+
+    &:hover {
+      transform: rotateZ(90deg);
+    }
+  }
+}
+
+/**
+ * Fade-zoom animation for first dialog
+ */
+
+/* start state */
+.my-mfp-zoom-in .popup {
+  opacity: 0;
+  transform: scale(.8);
+  transition: all .2s ease-in-out;
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .popup {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .popup {
+  opacity: 0;
+  transform: scale(.8);
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  transition: opacity .3s ease-out;
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: .8;
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}

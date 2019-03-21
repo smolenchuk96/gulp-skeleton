@@ -1,0 +1,44 @@
+.breadcrumbs {
+  background: $bg-light-color;
+
+  &__list {
+    list-style: inside none;
+    padding: 1rem 0;
+    margin: 0;
+    font: 400 .813rem/1.375rem $font-main;
+    color: $text-default-color;
+  }
+  &__item {
+    display: inline;
+    margin-right: 1.625rem;
+    font: inherit;
+    color: inherit;
+
+    &:after {
+      content: '/';
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+  &__link {
+    margin-right: 1.625rem;
+    font: inherit;
+    color: $text-default-color;
+    text-decoration: none;
+
+    &:focus {
+      color: $text-default-color;
+      text-decoration: none;
+    }
+    &:hover {
+      color: $text-accent-color;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+mixin checkboxMain(name, value, text, disabled)
+    if !disabled
+        +b('label').checkbox-main
+            +e('input').input(type='checkbox', name=name, value=value)
+            +e('span').display= text
+    else
+        +b('label').checkbox-main
+            +e('input').input(type='checkbox', name=name, value=value, disabled='disabled')
+            +e('span').display= text

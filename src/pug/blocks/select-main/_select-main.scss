@@ -1,0 +1,126 @@
+.select-main {
+  display: block;
+  width: 100%;
+
+  &:hover {
+
+    .select2-container {
+
+      .select2-selection {
+        border-color: $border-accent-color;
+      }
+    }
+  }
+
+  &__select {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+  .select2-container {
+    margin: 0;
+
+    .select2-selection {
+      height: auto;
+      padding: .813rem 2.125rem .813rem .875rem;
+      background: $bg-main-color;
+      outline: 0;
+      border: 2px solid $border-main-color;
+      border-radius: $border-radius-default;
+      transition: $transition-default;
+
+      &__rendered {
+        padding: 0;
+        font: 400 .875rem/1.25rem $font-main;
+        color: $text-default-color;
+      }
+      &__arrow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 2.25rem;
+        height: 100%;
+
+        &:before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -.125rem;
+          font: .75rem/1 $font-icons-solid;
+          color: $text-default-color;
+          content: '\f0dd';
+          transform: translate(-50%, -50%);
+        }
+
+        b {
+          display: none;
+        }
+      }
+
+      .select2-selection__placeholder {
+        color: $text-placeholder-color;
+      }
+    }
+
+    &--open {
+
+      .select2-selection {
+        border-color: $border-accent-color;
+
+        &__arrow {
+
+          &:before {
+            margin-top: 0;
+            content: '\f0d8';
+          }
+        }
+      }
+    }
+  }
+  .select2-dropdown {
+    background: $bg-main-color;
+    border: 2px solid $border-accent-color;
+
+    &--below {
+      border-top: 0;
+      border-bottom-right-radius: $border-radius-default;
+      border-bottom-left-radius: $border-radius-default;
+    }
+    &--above {
+      border-bottom: 0;
+      border-top-right-radius: $border-radius-default;
+      border-top-left-radius: $border-radius-default;
+    }
+  }
+  .select2-results {
+
+    &__option {
+      padding: .813rem .875rem;
+      border-bottom: 1px solid $border-main-color;
+      font: 400 .875rem/1.25rem $font-main;
+      color: #474744;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      &[aria-selected],
+      &--highlighted[aria-selected] {
+        background-color: transparent;
+        color: $text-default-color;
+
+        &:hover {
+          background-color: $bg-light-color;
+          color: $text-default-color;
+        }
+      }
+      &[aria-selected=true] {
+        background-color: $bg-light-color;
+        color: $text-default-color;
+      }
+    }
+    > .select2-results__options {
+      max-height: 14.625rem;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $white;
+  font: .875rem/1.4 $font-main;
+  color: $text-main-color;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: $text-main-color;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.2;
+  color: $text-main-color;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: .875rem;
+}
+
+p {
+  font: inherit;
+  color: $text-default-color;
+}
+
+b, strong {
+  font: inherit;
+  font-weight: bold;
+  color: inherit;
+}
+
+fieldset {
+  border: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &::-ms-clear {
+    display: none;
+  }
+  &[type=number] {
+    -moz-appearance: textfield;
+
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}
+
+textarea {
+  resize: none;
+  outline: 0;
+}
+
+a {
+  color: $text-link-color;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: $transition-default;
+
+  &:focus {
+    color: $text-link-color;
+    text-decoration: underline;
+  }
+  &:hover {
+    color: $text-link-color;
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+blockquote {
+  margin: 0;
+}

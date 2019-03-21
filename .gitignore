@@ -1,0 +1,16 @@
+#IDE
+.idea
+
+#dependences
+package-lock.json
+node_modules
+
+#archives
+*.rar
+
+#build
+/dist
+
+#generated
+/src/css/*.css
+/src/js/libs.min.js

@@ -1,0 +1,27 @@
+extends layouts/site
+
+block vars
+    - var title = 'Страницы - '+ companyname
+    - var description = 'На данной странице представлен перечень всех сверстанных страниц'
+
+block content
+    .container
+        h1 Страницы
+        h2 На данной странице представлен перечень всех сверстанных страниц
+        ul
+            li
+                a(href='/') Главная
+        h3 Системные страницы
+        ul
+            li
+                a(href='/404.html') 404
+            li
+                a(href='/content-page.html') Контентная страница
+            li
+                a(href='/ui-kit.html') Ui Kit
+        h3 Модальные окна
+        ul
+            li
+                a.popup-with-form(href='#success-modal') Успех
+            li
+                a.popup-with-form(href='#callback-modal') Обратная связь

@@ -1,0 +1,42 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 0px - 0px);
+  background: url(../img/theme/bg/error.jpg) no-repeat center;
+  background-size: cover;
+  @media screen and (max-width: 1199px) {
+    background-size: auto;
+  }
+
+  &__error {
+    display: block;
+    width: 100%;
+    margin: 1.25rem 0 0;
+    color: $text-default-color;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent), url(../img/theme/bg/error-text.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    font: 700 15.625rem/1 $font-main;
+    text-align: center;
+    @media screen and (max-width: 1199px) {
+      background-size: auto;
+    }
+    @media screen and (max-width: 575px) {
+      margin-top: 2.5rem;
+      font-size: 9.333rem;
+    }
+  }
+  &__desc {
+    margin: 0;
+    font: 700 1rem/1.25rem $font-main;
+    color: $text-default-color;
+    @media screen and (max-width: 575px) {
+      max-width: 16rem;
+      text-align: center;
+    }
+  }
+}

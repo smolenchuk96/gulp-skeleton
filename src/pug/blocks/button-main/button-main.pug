@@ -1,0 +1,17 @@
+mixin buttonMain(tag, typeOrHref, text, disabled)
+    if !disabled
+        case tag
+            when 'button'
+                +b('button').button-main(type=typeOrHref)= text
+            when 'input'
+                +b('input').button-main(type=typeOrHref, value=text)
+            when 'link'
+                +b('a').button-main(href=typeOrHref)= text
+    else
+        case tag
+            when 'button'
+                +b('button').button-main(type=typeOrHref, disabled='disabled')= text
+            when 'input'
+                +b('input').button-main(type=typeOrHref, value=text, disabled='disabled')
+            when 'link'
+                +b('a').button-main Перейти

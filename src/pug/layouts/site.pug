@@ -1,0 +1,13 @@
+doctype html
+html(lang='RU-ru', prefix='og: http://ogp.me/ns#')
+    include ../../libs/bemto.pug/bemto
+    include ../includes/head
+    include ../includes/blocks
+    body
+        include ../includes/header
+        block breadcrumbs
+        main
+            block content
+
+        include ../includes/footer
+        include ../includes/modals

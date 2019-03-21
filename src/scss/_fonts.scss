@@ -1,0 +1,25 @@
+//Main Fonts
+@import '../fonts/roboto/roboto.css';
+
+//Icons font
+@font-face {
+  font-family: 'FontAwesome Regular';
+  src: url('../fonts/fontawesome/fa-regular-400.eot');
+  src: url('../fonts/fontawesome/fa-regular-400.eot') format('embedded-opentype'), url('../fonts/fontawesome/fa-regular-400.woff2') format('woff2'), url('../fonts/fontawesome/fa-regular-400.woff') format('woff'), url('../fonts/fontawesome/fa-regular-400.ttf') format('truetype'), url('../fonts/fontawesome/fa-regular-400.svg#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FontAwesome Solid';
+  src: url('../fonts/fontawesome/fa-solid-900.eot');
+  src: url('../fonts/fontawesome/fa-solid-900.eot') format('embedded-opentype'), url('../fonts/fontawesome/fa-solid-900.woff2') format('woff2'), url('../fonts/fontawesome/fa-solid-900.woff') format('woff'), url('../fonts/fontawesome/fa-solid-900.ttf') format('truetype'), url('../fonts/fontawesome/fa-solid-900.svg#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FontAwesome Brands';
+  src: url('../fonts/fontawesome/fa-brands-400.eot');
+  src: url('../fonts/fontawesome/fa-brands-400.eot') format('embedded-opentype'), url('../fonts/fontawesome/fa-brands-400.woff2') format('woff2'), url('../fonts/fontawesome/fa-brands-400.woff') format('woff'), url('../fonts/fontawesome/fa-brands-400.ttf') format('truetype'), url('../fonts/fontawesome/fa-brands-400.svg#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

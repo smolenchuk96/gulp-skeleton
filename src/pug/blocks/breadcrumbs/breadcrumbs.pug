@@ -1,0 +1,16 @@
+mixin breadcrumbs(...items)
+    - var breadcrumbsLength = items.length - 1
+    +b('div').breadcrumbs
+        .container
+            +e('ol').list(itemscope, itemtype='http://schema.org/BreadcrumbList')
+                each item, index in items
+                    if index == breadcrumbsLength
+                        +e('li').item(itemprop='itemListElement', itemscope, itemtype='http://schema.org/ListItem')
+                            span(itemprop='item')
+                                span(itemprop='name')= item
+                            meta(itemprop='position', content= index + 1)
+                    else
+                        +e('li').item(itemprop='itemListElement', itemscope, itemtype='http://schema.org/ListItem')
+                            +e('a').link(itemprop='item', href='#')
+                                span(itemprop='name')= item
+                            meta(itemprop='position', content= index + 1)

@@ -1,0 +1,8 @@
+extends layouts/site
+
+block vars
+    - var title = 'Ошибка 404 - '+ companyname
+    - var description = 'Страница не найдена'
+
+block content
+    +pageError('404', 'Упс… Запрошенной вами страницы не существует')

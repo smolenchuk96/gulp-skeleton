@@ -1,0 +1,21 @@
+.input-main {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding:  .813rem .938rem;
+  background: $bg-main-color;
+  border: 2px solid $border-main-color;
+  border-radius: $border-radius-default;
+  font: 400 .875rem/1.25rem $font-main;
+  color: $text-default-color;
+  transition: $transition-default;
+
+  &::placeholder {
+    opacity: 1;
+    color: $text-placeholder-color;
+  }
+  &:hover,
+  &:focus {
+    border-color: $border-accent-color;
+  }
+}

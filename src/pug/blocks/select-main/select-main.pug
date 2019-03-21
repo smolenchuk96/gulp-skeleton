@@ -1,0 +1,12 @@
+mixin selectMain(name, placeholder, ...options)
+    if !placeholder
+        +b('label').select-main
+            +e('select').select(name=name)
+                each option, index in options
+                    option(value=index)= option
+    else
+        +b('label').select-main
+            +e('select').select(name=name, data-placeholder=placeholder)
+                option
+                each option, index in options
+                    option(value=index)= option

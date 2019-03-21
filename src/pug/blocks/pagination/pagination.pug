@@ -1,0 +1,24 @@
+mixin pagination()
+    +b('div').pagination
+        +e('ul').list
+            +e('li').item_prev
+                span Назад
+            +e('li').item.active
+                span 1
+            +e('li').item
+                a(href='#')
+                    span 2
+            +e('li').item
+                a(href='#')
+                    span 3
+            +e('li').item
+                a(href='#')
+                    span 4
+            +e('li').item
+                span ...
+            +e('li').item
+                a(href='#')
+                    span 20
+            +e('li').item_next
+                a(href='#')
+                    span Вперед

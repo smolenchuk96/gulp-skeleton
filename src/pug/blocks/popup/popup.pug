@@ -1,0 +1,10 @@
+mixin popup(id, title, desc, position)
+    +b('form').popup.white-popup-block.mfp-hide(id=id)
+        if !position
+            +e('p').title= title
+            +e('p').desc= desc
+            block
+        else
+            +e('p').title_center= title
+            +e('p').desc_center= desc
+            block
