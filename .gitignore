@@ -1,5 +1,6 @@
 #IDE
 .idea
+.DS_Store
 
 #dependences
 package-lock.json
