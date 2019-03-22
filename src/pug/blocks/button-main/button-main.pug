@@ -14,4 +14,4 @@ mixin buttonMain(tag, typeOrHref, text, disabled)
             when 'input'
                 +b('input').button-main(type=typeOrHref, value=text, disabled='disabled')
             when 'link'
-                +b('a').button-main Перейти
+                +b('a').button-main= text
