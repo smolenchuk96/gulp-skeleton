@@ -30,18 +30,18 @@
 
   &:disabled {
     cursor: not-allowed;
-    background: $bg-default-color;
-    border-color: $border-main-color;
+    background: $disabled-color;
+    border-color: $disabled-color;
     color: $text-default-color;
 
     &:focus {
-      background: $bg-default-color;
-      border-color: $border-main-color;
+      background: $disabled-color;
+      border-color: $disabled-color;
       color: $text-default-color;
     }
     &:hover {
-      background: $bg-default-color;
-      border-color: $border-main-color;
+      background: $disabled-color;
+      border-color: $disabled-color;
       color: $text-default-color;
     }
   }
@@ -49,18 +49,18 @@
 
 a.button-main:not([href]) {
   cursor: not-allowed;
-  background: $bg-default-color;
-  border-color: $border-main-color;
+  background: $disabled-color;
+  border-color: $disabled-color;
   color: $text-default-color;
 
   &:focus {
-    background: $bg-default-color;
-    border-color: $border-main-color;
+    background: $disabled-color;
+    border-color: $disabled-color;
     color: $text-default-color;
   }
   &:hover {
-    background: $bg-default-color;
-    border-color: $border-main-color;
+    background: $disabled-color;
+    border-color: $disabled-color;
     color: $text-default-color;
   }
 }

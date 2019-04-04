@@ -1,9 +1,17 @@
-mixin radioMain(name, value, text, disabled)
-    if !disabled
+mixin radioMain(name, value, text, checked, disabled)
+    if !checked && !disabled
         +b('label').radio-main
             +e('input').input(type='radio', name=name, value=value)
             +e('span').display= text
-    else
+    else if checked && !disabled
+        +b('label').radio-main
+            +e('input').input(type='radio', name=name, value=value, checked='checked')
+            +e('span').display= text
+    else if !checked && disabled
         +b('label').radio-main
             +e('input').input(type='radio', name=name, value=value, disabled='disabled')
+            +e('span').display= text
+    else
+        +b('label').radio-main
+            +e('input').input(type='radio', name=name, value=value, checked='checked', disabled='disabled')
             +e('span').display= text

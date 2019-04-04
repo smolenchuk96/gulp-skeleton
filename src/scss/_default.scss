@@ -114,3 +114,8 @@ img {
 blockquote {
   margin: 0;
 }
+
+:focus {
+  outline: $border-accent-color auto 5px;
+  outline-offset: -2px;
+}
