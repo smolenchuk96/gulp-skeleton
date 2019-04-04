@@ -47,13 +47,15 @@ block content
                 .col-lg-3.col-sm-6
                     +checkboxMain('weight[]', '0.5', '0.5 кг')
                     +checkboxMain('weight[]', '0.4', '0.4 кг')
-                    +checkboxMain('weight[]', '0.3', '0.3 кг')
-                    +checkboxMain('weight[]', '0.3', '0.3 кг', 'disabled')
+                    +checkboxMain('weight[]', '0.3', '0.3 кг', 'checked')
+                    +checkboxMain('weight[]', '0.2', '0.2 кг', '', 'disabled')
+                    +checkboxMain('weight[]', '0.1', '0.1 кг', 'checked', 'disabled')
                 .col-lg-3.col-sm-6
                     +radioMain('way', '1', 'Да')
                     +radioMain('way', '2', 'Нет')
-                    +radioMain('way', '3', 'Наверное')
-                    +radioMain('way', '3', 'Наверное', 'disabled')
+                    +radioMain('way', '3', 'Наверное', 'checked')
+                    +radioMain('gender', '1', 'Female', '', 'disabled')
+                    +radioMain('gender', '2', 'Male', 'checked', 'disabled')
     section
         .container
             h1 Полиграфия
