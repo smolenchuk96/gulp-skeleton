@@ -1,7 +1,39 @@
 .radio-main {
 
   &__input {
-    display: none;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+
+    &:disabled {
+
+      ~ .radio-main__display {
+        cursor: not-allowed;
+        color: $disabled-color;
+
+        &:after {
+          background: $disabled-color;
+          border-color: $bg-default-color;
+        }
+        &:hover {
+          color: $disabled-color;
+
+          &:before {
+            background: inherit;
+            border-color: $bg-default-color;
+          }
+          &:after {
+            background: $disabled-color;
+            border-color: $bg-default-color;
+          }
+        }
+      }
+    }
 
     &:checked {
 
@@ -10,6 +42,13 @@
         &:after {
           opacity: 1;
         }
+      }
+    }
+    &:focus {
+
+      ~ .radio-main__display {
+        outline: $border-accent-color auto 5px;
+        outline-offset: -2px;
       }
     }
   }

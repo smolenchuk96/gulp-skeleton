@@ -29,6 +29,10 @@
       border-radius: $border-radius-default;
       transition: $transition-default;
 
+      &:focus {
+        border-color: $border-accent-color;
+      }
+
       &__rendered {
         padding: 0;
         font: 400 .875rem/1.25rem $font-main;
@@ -75,6 +79,9 @@
           }
         }
       }
+    }
+    &--focus {
+      outline: $border-accent-color auto 5px;
     }
   }
   .select2-dropdown {
